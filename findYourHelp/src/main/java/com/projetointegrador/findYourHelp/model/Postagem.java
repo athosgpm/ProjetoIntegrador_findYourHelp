@@ -15,6 +15,8 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.URL;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -33,6 +35,7 @@ public class Postagem {
 
 	@NotNull
 	@Size(min = 5, max = 255)
+	@URL(message = "URL é inválida")
 	private String urlImagemPostagem;
 
 	@NotNull
