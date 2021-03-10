@@ -10,62 +10,32 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_tema")
+@Table(name = "tema")
 public class Tema {
-
+	// create table tema
+		// criando tabela tema
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_Tema;
-	
+	private long idTema;
+
 	@NotNull
-	private String descricao_Tema;
-	
+	@Size(min = 5,max = 255)
+	private String descricaoTema;
+
 	@NotNull
-	private String categoria_Tema;
-	
-	@NotNull
-	private String tipoAjuda_Tema;
-	
+	@Size(min = 5,max = 50)
+	private String categoriaTema;
+
+
+
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;
-
-	
-	public long getId_Tema() {
-		return id_Tema;
-	}
-
-	public void setId_Tema(long id_Tema) {
-		this.id_Tema = id_Tema;
-	}
-
-	public String getDescricao_Tema() {
-		return descricao_Tema;
-	}
-
-	public void setDescricao_Tema(String descricao_Tema) {
-		this.descricao_Tema = descricao_Tema;
-	}
-
-	public String getCategoria_Tema() {
-		return categoria_Tema;
-	}
-
-	public void setCategoria_Tema(String categoria_Tema) {
-		this.categoria_Tema = categoria_Tema;
-	}
-
-	public String getTipoAjuda_Tema() {
-		return tipoAjuda_Tema;
-	}
-
-	public void setTipoAjuda_Tema(String tipoAjuda_Tema) {
-		this.tipoAjuda_Tema = tipoAjuda_Tema;
-	}
 
 	public List<Postagem> getPostagem() {
 		return postagem;
@@ -74,5 +44,31 @@ public class Tema {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
+
+	public long getIdTema() {
+		return idTema;
+	}
+
+	public void setIdTema(long idTema) {
+		this.idTema = idTema;
+	}
+
+	public String getDescricaoTema() {
+		return descricaoTema;
+	}
+
+	public void setDescricaoTema(String descricaoTema) {
+		this.descricaoTema = descricaoTema;
+	}
+
+	public String getCategoriaTema() {
+		return categoriaTema;
+	}
+
+	public void setCategoriaTema(String categoriaTema) {
+		this.categoriaTema = categoriaTema;
+	}
+
 	
+
 }
