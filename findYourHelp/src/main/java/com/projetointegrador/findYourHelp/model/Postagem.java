@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Postagem {
 	// create table postagem
 	// criando tabela postagem
-
+	// criando atributo privado id, chave principal
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idPostagem;
