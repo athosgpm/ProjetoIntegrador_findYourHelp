@@ -1,7 +1,13 @@
+/* Projeto Integrador Find Your Help
+ Comentários criados por: Gustavo de Souza Guilhen e Tatiane Tissoni Antunes. 
+ */
+
 package com.projetointegrador.findYourHelp.model;
 
+// Classe para segurança na camada usuario
 public class UserLogin {
 
+// Atributos da classe
 	private String nomeUsuario;
 
 	private String emailUsuario;
@@ -14,6 +20,7 @@ public class UserLogin {
 
 	private String token;
 
+	// Getters E Setters
 	public String getNomeUsuario() {
 		return nomeUsuario;
 	}
