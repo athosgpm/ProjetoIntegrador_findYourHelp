@@ -16,6 +16,6 @@ import com.projetointegrador.findYourHelp.model.Postagem;
 @Repository
 public interface PostagemRepository extends JpaRepository<Postagem,Long>
 {
-	// Criação de metodo de procura pelo atributo titulo postagem usado no controller
+	// Criação de metodo de procura pelo Atributo Titulo Postagem usado no controller
 		public List<Postagem> findAllByTituloPostagemContainingIgnoreCase(String tituloPostagem); 
 }
