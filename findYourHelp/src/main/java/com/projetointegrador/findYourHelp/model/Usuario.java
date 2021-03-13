@@ -34,31 +34,31 @@ public class Usuario {
 	private long idUsuario;
 
 // Atributo nomeUsuario com suas caracteristicas	
-	@NotEmpty(message="O nome do usuário é um campo obrigatório.")
-	@NotNull(message="O nome do usuário é um campo obrigatório.")
-	@Size(min = 2, max = 100, message="O nome do usuário deve possuir entre 2 e 100 caracteres.")
+	@NotEmpty
+	@NotNull
+	@Size(min = 2, max = 100)
 	private String nomeUsuario;
 
 // Atributo emailUsuario com suas caracteristicas
-	@NotEmpty(message="O E-mail do usuário é um campo obrigatório.")
-	@NotNull(message="O E-mail do usuário é um campo obrigatório.")
-	@Email(message="O E-mail do usuário precisa ser válido.")
-	@Size(min = 5, max = 100, message="O E-mail do usuário deve possuir entre 5 e 100 caracteres.")
+	@NotEmpty
+	@NotNull
+	@Email
+	@Size(min = 5, max = 100)
 	private String emailUsuario;
 
 // Atributo senhaUsuario com suas caracteristicas
-	@NotEmpty(message="A senha do usuário é um campo obrigatório.")
-	@NotNull(message="A senha do usuário é um campo obrigatório.")
-	@Size(min = 5, max = 100, message="A senha do usuário deve possuir entre 5 e 100 caracteres.")
+	@NotEmpty
+	@NotNull
+	@Size(min = 5, max = 100)
 	private String senhaUsuario;
 
 // Atributo imagemUsuario com suas caracteristicas	
-	@URL(message="O campo precisa possuir uma URL.")
+	@URL
 	private String imagemUsuario;
 
 // Atributo tipoUsuario com suas caracteristicas
-	@NotEmpty(message="O tipo de usuário é um campo obrigatório.")	
-	@NotNull(message="O tipo de usuário é um campo obrigatório.")
+	@NotEmpty	
+	@NotNull
 	private String tipoUsuario;
 
 // Relacionamento entre tabela postagem
