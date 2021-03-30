@@ -25,34 +25,42 @@ public class Postagem {
 	// create table postagem
 	// criando tabela postagem
 
+	//criando atributo IdPostagem
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idPostagem;
 
+	//criando atributo descriçãoPostagem
 	@NotNull
 	@Size(min = 5, max = 500)
 	private String descricaoPostagem;
 
+	//criando atributo UrlImagemPostagem
 	@NotNull
 	@Size(min = 5, max = 255)
 	@URL(message = "URL é inválida")
 	private String urlImagemPostagem;
 
+	//criando atributo TituloPostagem
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String tituloPostagem;
-	
+
+	//criando atributo TipoAjudaPostagem
 	@NotNull
 	@Size(min = 5, max = 50)
 	private String tipoAjudaPostagem;
 
+	//criando atributo DataPostagem
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataPostagem = new java.sql.Date(System.currentTimeMillis());
 
+	//relacionando a tabela tema à postagem (chave estrangeira)
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Tema tema;
 	
+	//relacionando a tabela usuario à postagem (chave estrangeira)
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;

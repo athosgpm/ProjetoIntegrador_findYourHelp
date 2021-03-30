@@ -22,6 +22,7 @@ import org.hibernate.validator.constraints.URL;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 // Criação da tabela: Usuario
 @Entity
@@ -60,9 +61,15 @@ public class Usuario {
 	@NotEmpty	
 	@NotNull
 	private String tipoUsuario;
+	
+// Atributo telefoneUsuario com suas caracteristicas
+	@NotEmpty
+	@NotNull
+	@Pattern(regexp="((?\\d{2})?\\s)?(\\d{4,5}-\\d{4})")
+	private String telefoneUsuario;
 
 // Relacionamento entre tabela postagem
-	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 
@@ -123,4 +130,13 @@ public class Usuario {
 		this.postagem = postagem;
 	}
 
+	public String getTelefoneUsuario() {
+		return telefoneUsuario;
+	}
+
+	public void setTelefoneUsuario(String telefoneUsuario) {
+		this.telefoneUsuario = telefoneUsuario;
+	}
+
+	
 }

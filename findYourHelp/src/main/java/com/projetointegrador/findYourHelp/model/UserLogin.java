@@ -8,6 +8,8 @@ package com.projetointegrador.findYourHelp.model;
 public class UserLogin {
 
 // Atributos da classe
+	private long idUsuario;
+	
 	private String nomeUsuario;
 
 	private String emailUsuario;
@@ -17,10 +19,20 @@ public class UserLogin {
 	private String imagemUsuario;
 
 	private String tipoUsuario;
+	
+	private String telefoneUsuario;
 
 	private String token;
 
 	// Getters E Setters
+	public long getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(long idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+	
 	public String getNomeUsuario() {
 		return nomeUsuario;
 	}
@@ -67,6 +79,14 @@ public class UserLogin {
 
 	public void setEmailUsuario(String emailUsuario) {
 		this.emailUsuario = emailUsuario;
+	}
+
+	public String getTelefoneUsuario() {
+		return telefoneUsuario;
+	}
+
+	public void setTelefoneUsuario(String telefoneUsuario) {
+		this.telefoneUsuario = telefoneUsuario;
 	}
 
 }

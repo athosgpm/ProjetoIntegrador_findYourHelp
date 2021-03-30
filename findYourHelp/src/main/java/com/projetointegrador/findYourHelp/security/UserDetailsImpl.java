@@ -23,45 +23,53 @@ public class UserDetailsImpl implements UserDetails {
 
 	}
 
+	//construtor padrão vazio
 	public UserDetailsImpl() {
 	}
 
+	//metodos de implementação obrigatórios devido ao implements
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 
 		return authorities;
 	}
 
+	//resgata a senha do usuario do token
 	@Override
 	public String getPassword() {
 
 		return password;
 	}
 
+	//resgata o nome do usuario do token
 	@Override
 	public String getUsername() {
 
 		return userName;
 	}
 
+	//verificação se a senha expirou ou não
 	@Override
 	public boolean isAccountNonExpired() {
 
 		return true;
 	}
 
+	//verificação se a conta esta bloqueada
 	@Override
 	public boolean isAccountNonLocked() {
 
 		return true;
 	}
 
+	//verificação se as credenciais expirou ou não
 	@Override
 	public boolean isCredentialsNonExpired() {
 
 		return true;
 	}
 
+	//informa se esta ativo
 	@Override
 	public boolean isEnabled() {
 
