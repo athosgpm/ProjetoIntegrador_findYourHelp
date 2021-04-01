@@ -24,13 +24,13 @@ public class Tema {
 	private long idTema;
 
 	//criando atributo descriçãoTema
-	@NotNull
-	@Size(min = 5,max = 255)
+	@NotNull (message = "A descrição do tema é um campo obrigatório")
+	@Size(min = 5,max = 255, message = "O campo descrição do tema deve possuir de 5 a 255 caracteres")
 	private String descricaoTema;
 
 	//criando atributo categoriaTema
-	@NotNull
-	@Size(min = 5,max = 50)
+	@NotNull (message = "A categoria do tema é um campo obrigatório")
+	@Size(min = 5,max = 50, message = "O campo categoria do tema deve possuir de 5 a 50 caracteres")
 	private String categoriaTema;
 
 	//relacionando a tabela tema à postagem (chave estrangeira)

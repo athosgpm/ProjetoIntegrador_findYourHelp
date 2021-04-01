@@ -31,24 +31,24 @@ public class Postagem {
 	private long idPostagem;
 
 	//criando atributo descriçãoPostagem
-	@NotNull
-	@Size(min = 5, max = 255)
+	@NotNull (message = "A descrição da postagem é um campo obrigatório")
+	@Size(min = 5, max = 255, message = "O campo link da imagem deve possuir de 5 a 255 caracteres")
 	private String descricaoPostagem;
 
 	//criando atributo UrlImagemPostagem
-	@NotNull
-	@Size(min = 5, max = 255)
+	@NotNull (message = "O campo link da imagem é um campo obrigatório")
+	@Size(min = 5, max = 255, message = "O campo link da imagem deve possuir de 5 a 255 caracteres")
 	@URL(message = "URL é inválida")
 	private String urlImagemPostagem;
 
 	//criando atributo TituloPostagem
-	@NotNull
-	@Size(min = 5, max = 50)
+	@NotNull (message = "O titulo da postagem é um campo obrigatório")
+	@Size(min = 5, max = 50, message = "O titulo da postagem deve possuir de 5 a 50 caracteres")
 	private String tituloPostagem;
 
 	//criando atributo TipoAjudaPostagem
-	@NotNull
-	@Size(min = 5, max = 50)
+	@NotNull (message = "O tipo de ajuda é um campo obrigatório")
+	@Size(min = 5, max = 50, message = "O campo do tipo de ajuda deve possuir de 5 a 50 caracteres")
 	private String tipoAjudaPostagem;
 
 	//criando atributo DataPostagem
