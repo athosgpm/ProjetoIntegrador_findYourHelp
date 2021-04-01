@@ -64,6 +64,9 @@ public class UsuarioService {
 				user.get().setNomeUsuario(usuario.get().getNomeUsuario());
 				user.get().setEmailUsuario(usuario.get().getEmailUsuario());
 				
+//### 			//TipoAdmin
+//###			//user.get().setTipoAdmin(usuario.get().isTipoAdmin());
+				
 				user.get().setIdUsuario(usuario.get().getIdUsuario());
 				user.get().setImagemUsuario(usuario.get().getImagemUsuario());
 				user.get().setTipoUsuario(usuario.get().getTipoUsuario());

@@ -32,7 +32,7 @@ public class Postagem {
 
 	//criando atributo descriçãoPostagem
 	@NotNull
-	@Size(min = 5, max = 500)
+	@Size(min = 5, max = 255)
 	private String descricaoPostagem;
 
 	//criando atributo UrlImagemPostagem
@@ -43,7 +43,7 @@ public class Postagem {
 
 	//criando atributo TituloPostagem
 	@NotNull
-	@Size(min = 5, max = 100)
+	@Size(min = 5, max = 50)
 	private String tituloPostagem;
 
 	//criando atributo TipoAjudaPostagem

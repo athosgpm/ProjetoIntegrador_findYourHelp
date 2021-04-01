@@ -17,5 +17,5 @@ import com.projetointegrador.findYourHelp.model.Tema;
 public interface TemaRepository extends JpaRepository<Tema,Long>
 {
 	// Criação de metodo de procura pelo Atributo Categoria Tema usado no controller
-		public List<Tema> findAllByCategoriaTemaContainingIgnoreCase(String categoriaTema); 
+		public List<Tema> findAllByCategoriaTemaContainingIgnoreCase(String categoriaTema);
 }

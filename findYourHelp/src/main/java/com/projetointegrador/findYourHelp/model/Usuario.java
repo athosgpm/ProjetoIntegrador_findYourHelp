@@ -37,7 +37,7 @@ public class Usuario {
 // Atributo nomeUsuario com suas caracteristicas	
 	@NotEmpty
 	@NotNull
-	@Size(min = 2, max = 100)
+	@Size(min = 2, max = 12)
 	private String nomeUsuario;
 
 // Atributo emailUsuario com suas caracteristicas
@@ -50,7 +50,7 @@ public class Usuario {
 // Atributo senhaUsuario com suas caracteristicas
 	@NotEmpty
 	@NotNull
-	@Size(min = 5, max = 100)
+	@Size(min = 3, max = 8)
 	private String senhaUsuario;
 
 // Atributo imagemUsuario com suas caracteristicas	
@@ -65,7 +65,7 @@ public class Usuario {
 // Atributo telefoneUsuario com suas caracteristicas
 	@NotEmpty
 	@NotNull
-	@Pattern(regexp="((?\\d{2})?\\s)?(\\d{4,5}-\\d{4})")
+	@Pattern(regexp="((?\\d{2})?\\s)?(\\d{5}-\\d{4})")
 	private String telefoneUsuario;
 
 // Relacionamento entre tabela postagem

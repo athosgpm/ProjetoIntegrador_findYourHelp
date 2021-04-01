@@ -18,7 +18,8 @@ public class UserDetailsImpl implements UserDetails {
 	private List<GrantedAuthority> authorities;
 
 	public UserDetailsImpl(Usuario user) {
-		this.userName = user.getNomeUsuario();
+		this.userName = user.getNomeUsuario();	
+//### 	this.userName = user.getEmailUsuario();
 		this.password = user.getSenhaUsuario();
 
 	}
@@ -30,49 +31,43 @@ public class UserDetailsImpl implements UserDetails {
 	//metodos de implementação obrigatórios devido ao implements
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-
-		return authorities;
+		return authorities;	
+//### 	return null;
 	}
 
 	//resgata a senha do usuario do token
 	@Override
 	public String getPassword() {
-
 		return password;
 	}
 
 	//resgata o nome do usuario do token
 	@Override
 	public String getUsername() {
-
 		return userName;
 	}
 
 	//verificação se a senha expirou ou não
 	@Override
 	public boolean isAccountNonExpired() {
-
 		return true;
 	}
 
 	//verificação se a conta esta bloqueada
 	@Override
 	public boolean isAccountNonLocked() {
-
 		return true;
 	}
 
 	//verificação se as credenciais expirou ou não
 	@Override
 	public boolean isCredentialsNonExpired() {
-
 		return true;
 	}
 
 	//informa se esta ativo
 	@Override
 	public boolean isEnabled() {
-
 		return true;
 	}
 
