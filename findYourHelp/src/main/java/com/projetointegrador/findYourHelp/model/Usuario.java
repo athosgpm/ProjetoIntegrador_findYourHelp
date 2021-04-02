@@ -35,19 +35,20 @@ public class Usuario {
 	private long idUsuario;
 
 // Atributo nomeUsuario com suas caracteristicas	
-	@NotNull (message = "O nome do usuario é um campo obrigatório")
 	@Size(min = 2, max = 12, message = "O campo nome do usuario deve possuir de 2 a 12 caracteres")
+	@NotNull (message = "O nome do usuario é um campo obrigatório")
 	private String nomeUsuario;
 
 // Atributo emailUsuario com suas caracteristicas
-	@NotNull (message = "O email do usuario é um campo obrigatório")
+	
 	@Email (message = "O e-mail do usuario deve ser um e-mail válido")
 	@Size(min = 5, max = 100, message = "O campo email do usuario deve possuir de 5 a 100 caracteres")
+	@NotNull (message = "O email do usuario é um campo obrigatório")
 	private String emailUsuario;
 
 // Atributo senhaUsuario com suas caracteristicas
+	@Size(min = 2, max = 100, message = "O campo senha do usuario deve possuir de 2 a 8 caracteres")
 	@NotNull (message = "A senha do usuario é um campo obrigatório")
-	@Size(min = 2, max = 8, message = "O campo senha do usuario deve possuir de 2 a 8 caracteres")
 	private String senhaUsuario;
 
 // Atributo imagemUsuario com suas caracteristicas	
@@ -55,12 +56,12 @@ public class Usuario {
 	private String imagemUsuario;
 
 // Atributo tipoUsuario com suas caracteristicas	
-	@NotNull (message = "O tipo do usuario é um campo obrigatório")
+//	@NotNull //(message = "O tipo do usuario é um campo obrigatório")
 	private String tipoUsuario;
 	
 // Atributo telefoneUsuario com suas caracteristicas
+//	@Pattern(regexp="((?\\d{2})?\\s)?(\\d{5}-\\d{4})")
 	@NotNull (message = "O telefone do usuario é um campo obrigatório")
-	@Pattern(regexp="((?\\d{2})?\\s)?(\\d{5}-\\d{4})")
 	private String telefoneUsuario;
 
 // Relacionamento entre tabela postagem
