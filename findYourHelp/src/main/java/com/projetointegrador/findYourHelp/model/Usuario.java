@@ -56,7 +56,7 @@ public class Usuario {
 	private String imagemUsuario;
 
 // Atributo tipoUsuario com suas caracteristicas	
-//	@NotNull //(message = "O tipo do usuario é um campo obrigatório")
+//	@NotNull (message = "O tipo do usuario é um campo obrigatório")
 	private String tipoUsuario;
 	
 // Atributo telefoneUsuario com suas caracteristicas
