@@ -68,6 +68,10 @@ public class Usuario {
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
+// Relacionamento entre tabela comentario	
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuario")
+	private List<ComentarioPostagem> comentario;
 
 //Getters e Setters
 	public long getIdUsuario() {
@@ -132,6 +136,14 @@ public class Usuario {
 
 	public void setTelefoneUsuario(String telefoneUsuario) {
 		this.telefoneUsuario = telefoneUsuario;
+	}
+
+	public List<ComentarioPostagem> getComentario() {
+		return comentario;
+	}
+
+	public void setComentario(List<ComentarioPostagem> comentario) {
+		this.comentario = comentario;
 	}
 
 	
