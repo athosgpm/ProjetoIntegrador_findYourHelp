@@ -35,7 +35,7 @@ public class Usuario {
 	private long idUsuario;
 
 // Atributo nomeUsuario com suas caracteristicas	
-	@Size(min = 2, max = 12, message = "O campo nome do usuario deve possuir de 2 a 12 caracteres")
+	@Size(min = 2, max = 50, message = "O campo nome do usuario deve possuir de 2 a 50 caracteres")
 	@NotNull (message = "O nome do usuario é um campo obrigatório")
 	private String nomeUsuario;
 
@@ -56,7 +56,7 @@ public class Usuario {
 	private String imagemUsuario;
 
 // Atributo tipoUsuario com suas caracteristicas	
-//	@NotNull (message = "O tipo do usuario é um campo obrigatório")
+	@NotNull (message = "O tipo do usuario é um campo obrigatório")
 	private String tipoUsuario;
 	
 // Atributo telefoneUsuario com suas caracteristicas
