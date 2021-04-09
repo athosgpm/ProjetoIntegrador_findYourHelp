@@ -72,8 +72,10 @@ public class Usuario {
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<ComentarioPostagem> comentario;
+	
+//TODO criar atributo isAdmin do tipo boolean/ nao esquecer de criar na camada de security/mesmo para user login e usuario service
 
-//Getters e Setters
+	//Getters e Setters
 	public long getIdUsuario() {
 		return idUsuario;
 	}

@@ -51,6 +51,11 @@ public class PostagemController {
 	public ResponseEntity<List<Postagem>> GetByTitulo(@PathVariable String tituloPostagem) {
 		return ResponseEntity.ok(repository.findAllByTituloPostagemContainingIgnoreCase(tituloPostagem));
 	}
+	
+	@GetMapping("/tipo/postagem/portipo/{tipoAjudaPostagem}")
+	public ResponseEntity<List<Postagem>> GetByTipo(@PathVariable String tipoAjudaPostagem) {
+		return ResponseEntity.ok(repository.getPostagensByTipo(tipoAjudaPostagem));
+	}
 
 	//Insere uma postagem.
 	@PostMapping

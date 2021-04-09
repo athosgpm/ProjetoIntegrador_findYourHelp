@@ -49,7 +49,7 @@ public class Postagem {
 
 	//criando atributo TipoAjudaPostagem
 	@NotNull (message = "O tipo de ajuda é um campo obrigatório")
-	@Size(min = 5, max = 50, message = "O campo do tipo de ajuda deve possuir de 5 a 50 caracteres")
+	@Size(min = 1, max = 50, message = "O campo do tipo de ajuda deve possuir de 5 a 50 caracteres")
 	private String tipoAjudaPostagem;
 
 	//criando atributo DataPostagem

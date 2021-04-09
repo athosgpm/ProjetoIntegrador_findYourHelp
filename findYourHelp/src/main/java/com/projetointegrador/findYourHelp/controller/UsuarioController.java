@@ -61,7 +61,7 @@ public class UsuarioController {
 		try {
 			return ResponseEntity.ok(user.get());
 		} catch (Exception e) {
-			return ResponseEntity.badRequest().build();
+			return null;
 		}
 
 	}
