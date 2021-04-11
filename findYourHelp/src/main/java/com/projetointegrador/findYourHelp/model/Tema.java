@@ -23,11 +23,6 @@ public class Tema {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idTema;
 
-	//criando atributo descriçãoTema
-	@NotNull (message = "A descrição do tema é um campo obrigatório")
-	@Size(min = 5,max = 255, message = "O campo descrição do tema deve possuir de 5 a 255 caracteres")
-	private String descricaoTema;
-
 	//criando atributo categoriaTema
 	@NotNull (message = "A categoria do tema é um campo obrigatório")
 	@Size(min = 5,max = 50, message = "O campo categoria do tema deve possuir de 5 a 50 caracteres")
@@ -55,13 +50,7 @@ public class Tema {
 		this.idTema = idTema;
 	}
 
-	public String getDescricaoTema() {
-		return descricaoTema;
-	}
-
-	public void setDescricaoTema(String descricaoTema) {
-		this.descricaoTema = descricaoTema;
-	}
+	
 
 	public String getCategoriaTema() {
 		return categoriaTema;
