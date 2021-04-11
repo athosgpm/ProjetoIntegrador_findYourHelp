@@ -50,7 +50,6 @@ public class Tema {
 		this.idTema = idTema;
 	}
 
-	
 
 	public String getCategoriaTema() {
 		return categoriaTema;
