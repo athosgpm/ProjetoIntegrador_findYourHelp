@@ -34,3 +34,8 @@ Projeto Find your help é uma rede social que visa promover uma infraestrutura d
 ### Cadastro
 ![Página do cadastro](https://imgur.com/KyxxMcU.png "Cadastro")
 :pushpin: Usando o <a href="https://addons.mozilla.org/pt-BR/firefox/addon/nocoffee/">No coffee </a> simulamos como o daltonico vê a pagina de cadastro e nas nossas validações usamos frases de alerta , simbolos de alerta para comunicar qualquer possivel erro sem depender de cores :pushpin:
+
+### Pagina do usuario
+![Página do usuario](https://imgur.com/A65E4Yb.png "UserPage")
+
+
