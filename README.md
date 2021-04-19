@@ -28,4 +28,5 @@ Projeto Find your help é uma rede social que visa promover uma infraestrutura d
 
 ##  :bulb: Screenshots
 
-<img src = 'https://imgur.com/cvwctMp;png'/>
+Pagina inicial
+![Página da home](https://imgur.com/cvwctMp.png "Home")
