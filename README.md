@@ -4,7 +4,7 @@
 [![made-with-angular](https://img.shields.io/badge/Made%20with-angular-1f425f.svg)](https://angular.io/)
 [![made-with-angularmaterial](https://img.shields.io/badge/Made%20with-angularmaterial-1f425f.svg)](https://material.angular.io/)
 
-# :bulb: ProjetoIntegrador Find Your Help :bulb:
+# :bulb: Projeto Integrador Find Your Help :bulb:
 
 - :art:<a href = "https://github.com/Andressaffs"> Andressa Ferreira </a>
 - :loudspeaker:<a href = "https://github.com/athosgpm"> Athos Mesquita </a>
