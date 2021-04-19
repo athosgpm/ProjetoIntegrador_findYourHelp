@@ -35,7 +35,12 @@ Projeto Find your help é uma rede social que visa promover uma infraestrutura d
 ![Página do cadastro](https://imgur.com/KyxxMcU.png "Cadastro")
 :pushpin: Usando o <a href="https://addons.mozilla.org/pt-BR/firefox/addon/nocoffee/">No coffee </a> simulamos como o daltonico vê a pagina de cadastro e nas nossas validações usamos frases de alerta , simbolos de alerta para comunicar qualquer possivel erro sem depender de cores :pushpin:
 
-### Pagina do usuario
+### Página do usuario
 ![Página do usuario](https://imgur.com/A65E4Yb.png "UserPage")
 
+# :bulb: Nosso site pode ser visto por <a href = "https://find-your-help.herokuapp.com/#/homepage">aqui</a> :bulb:
 
+
+# :bulb: Agradecimentos finais
+
+Agradeço a <a href = "https://brazil.generation.org/"> Generation </a> pela realização da tarefa
