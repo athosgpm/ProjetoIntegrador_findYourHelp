@@ -18,7 +18,7 @@
 
 ##  :bulb: Sobre 
 Projeto Find your help é uma rede social que visa promover uma infraestrutura de qualidade para as pessoas que precisam de investimentos (financeiros, serviços e feedback), para implementação de suas ideias. Desta forma, o projeto tem como objetivo fomentar empregos, gerar inovação e possibilitar uma chance de mudança de vida, através da conexão de investidores e empreendedores.
-<hr>
+
 
 ##  :bulb: Documentação
 
