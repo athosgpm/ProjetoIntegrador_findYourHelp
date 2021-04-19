@@ -3,7 +3,7 @@
 [![made-with-springboot](https://img.shields.io/badge/Made%20with-springboot-1f425f.svg)](https://spring.io/projects/spring-boot)
 [![made-with-angular](https://img.shields.io/badge/Made%20with-angular-1f425f.svg)](https://angular.io/)
 [![made-with-angularmaterial](https://img.shields.io/badge/Made%20with-angularmaterial-1f425f.svg)](https://material.angular.io/)
-[![GitHub contributors](https://img.shields.io/github/contributors/athosgpm/badges.svg)](https://github.com/athosgpm/ProjetoIntegrador_findYourHelp/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/athosgpm/badges.svg)](https://GitHub.com/Naereen/badges/graphs/contributors/)
 
 # :bulb: Projeto Integrador Find Your Help :bulb:
 
