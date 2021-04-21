@@ -39,7 +39,7 @@ Projeto Find your help é uma rede social que visa promover uma infraestrutura d
 ![Página do usuario](https://imgur.com/A65E4Yb.png "UserPage")
 
 # :bulb: Nosso site pode ser visto por <a href = "https://find-your-help.herokuapp.com/#/homepage">aqui</a> :bulb:
-Repositório para o Front end pode tbm ser acessado por <a href= "https://github.com/athosgpm/FindYourHelp-FrontEnd">aqui</a>
+Repositório para o Front end pode também ser acessado por <a href= "https://github.com/athosgpm/FindYourHelp-FrontEnd">aqui</a>
 
 # :bulb: Agradecimentos finais
 
